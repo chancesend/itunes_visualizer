@@ -1,5 +1,6 @@
 import itunes_visualizer as iv
 
+
 def test_get_zipcode_info():
     assert "Louisville".upper() == iv.get_zipcode_info("80027")["city"]
     assert "Louisville".upper() == iv.get_zipcode_info("80027-8606")["city"]
@@ -22,6 +23,7 @@ def test_get_zipcode_info():
         assert data["Track Name"][1] == "North of Nowhere"
         assert data["Download Date"][0] == pd.Timestamp('20120102')
         assert data["Download Date"][1] == pd.Timestamp('20120103')
+
 
 def test_parse_folder(tmpdir):
     files = [
