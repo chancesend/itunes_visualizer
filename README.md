@@ -1,2 +1,2 @@
 # itunes_visualizer
-Visualization of iTunes music sales data
+Experimenting with visualization of iTunes music sales data coming from CD Baby.
